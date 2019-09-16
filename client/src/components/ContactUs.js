@@ -8,6 +8,11 @@ import Footer from "./Footer.js"
             <MotherDiv>
                 <ContactUsDiv>
                     <HContact>Contact Us</HContact>
+                    <Address>NEW AGE OILS, LLC
+914 CHAMPION FERRY ROAD
+GAFFNEY, SC 29341
+(864) 909-1964
+info@newageoilsllc.com</Address>
                 </ContactUsDiv>
                 <Footer/>
             </MotherDiv>
@@ -30,4 +35,8 @@ const ContactUsDiv = styled.div`
 
 const HContact = styled.h1`
     margin: 0;
+`
+
+const Address = styled.p`
+    
 `

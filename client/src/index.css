@@ -28,6 +28,46 @@ code {
   padding: 0;
 }
 
+/* NAVBAR */
+.navCol{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logoCol {
+ height: 100%;
+
+}
+
+#logoLink{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLink{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 70%; 
+  padding: 2%;
+  color: black;
+}
+
+.navLink:hover {
+  box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+}
+
+
+#contactBtn{
+  border: solid 2px orange;
+}
+
 
 /* FOOTER */
 

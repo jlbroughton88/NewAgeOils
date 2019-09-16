@@ -2,23 +2,24 @@ import React, { Component } from 'react'
 import styled from "styled-components"
 import { Link } from "react-router-dom";
 import { Col, Row } from "react-materialize"
+import logo from "./images/logo.png"
 
 class Navbar extends Component {
     render() {
         return (
             <MotherDiv>
                 <Row>
-                    <Col s={4} m={4} l={4} className="navCol">
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/services">Services</Link>
-                        <Link to="/contact">Contact</Link>
+                    <Col s={3} m={3} l={3} className="logoCol">
+                        <Link id="logoLink" to="/">
+                        <Logo src={logo}></Logo>
+                        </Link>
+                        
                     </Col>
-                    <Col className="logoCol">
-
-                    </Col>
-                    <Col className="contactCol">
-
+                    <Col s={9} m={9} l={9} className="navCol">
+                        <Link className="navLink" to="/">Home</Link>
+                        <Link className="navLink" to="/about">About</Link>
+                        <Link className="navLink" to="/services">Services</Link>
+                        <Link className="navLink" id="contactBtn" to="/contact">Contact</Link>
                     </Col>
                 </Row>
 
@@ -33,4 +34,11 @@ const MotherDiv = styled.div`
     width: 100%;
     height: 7%;
     background-color: lightblue;
+    background-color: #A9A9A9;
+`
+
+const Logo = styled.img`
+    height: 80%;
+    width: auto;
+    align-self: center;
 `

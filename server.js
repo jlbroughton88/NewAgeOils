@@ -14,7 +14,7 @@ mongoose.connect(url, {
     useUnifiedTopology: true
 }).catch(e => {
     console.error(e.message)
-})
+}).then(console.log("MongoDB Connected"))
 
 // HEROKU
 // git add .
