@@ -33,8 +33,9 @@ export default Navbar;
 const MotherDiv = styled.div`
     width: 100%;
     height: 7%;
-    background-color: lightblue;
-    background-color: #A9A9A9;
+    background: #e4e4e4;
+    border-bottom: #179D1C solid 1px;
+    min-height: 51px;
 `
 
 const Logo = styled.img`

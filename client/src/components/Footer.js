@@ -5,54 +5,64 @@ import linkedIn from "./images/socialMediaIcons/linkedin.png";
 import gitHub from "./images/socialMediaIcons/githubLogoBlack.png";
 import faceBook from "./images/socialMediaIcons/facebook.png";
 import email from "./images/socialMediaIcons/email.png";
+import instagram from "./images/socialMediaIcons/instagram.png";
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
     render() {
         return (
             <MotherDiv>
-                <Row className="InfoRow">
-                    <Col s={4} className="stayConnectedCol">
-                        <InfoHeaders>Stay Connected</InfoHeaders>
+                <InfoRow>
+                    <StayConnectedCol>
+                        {/* <InfoHeaders>Stay Connected</InfoHeaders> */}
                         <SocialDiv>
-                            <Img src={email} alt="" />
-                            <Img src={faceBook} alt="" />
-                        </SocialDiv>
+                            
+                                <ImgLink href=""><Img src={email} alt="" /></ImgLink>
 
-                    </Col>
-                    <Col s={4} className="shortOfferCol">
-                        <InfoHeaders>Committed to helping</InfoHeaders>
-                    </Col>
-                    <Col s={4} className="navigateCol">
-                        <InfoHeaders>Navigate</InfoHeaders>
-                    </Col>
-                </Row>
+                            <ImgLink href=""><Img src={faceBook} alt="" /></ImgLink>
+
+                            <ImgLink href=""><Img src={linkedIn} alt="" /></ImgLink>
+
+                            <ImgLink href=""><Img src={instagram} alt="" /></ImgLink>
+
+                        </SocialDiv>
+                    </StayConnectedCol>
+
+                    <NavigateCol>
+                        {/* <InfoHeaders>Navigate</InfoHeaders> */}
+                        <LinkDiv>
+                            <Link className="footerLink" to="/">Home</Link>
+                            <Link className="footerLink" to="/about">About</Link>
+                            <Link className="footerLink" to="/services">Services</Link>
+                            <Link className="footerLink" id="footerContactBtn" to="/contact">Contact</Link>
+                        </LinkDiv>
+                    </NavigateCol>
+
+
+                </InfoRow>
                 <hr />
-                <Row className="copyrightStuffRow">
-                    <Col className="copyrightStuffCol">
-                        <PCopy>Privacy Policy</PCopy>
-                    </Col>
-                    <Col className="copyrightStuffCol">
-                        <PCopy>Terms and Conditions</PCopy>
-                    </Col>
-                    <Col className="copyrightStuffCol">
-                        <PCopy>FDA Disclaimer</PCopy>
-                    </Col>
-                    <Col className="copyrightStuffCol">
-                        <PCopy>Contact Us</PCopy>
-                    </Col>
-                </Row>
+                <PolicyStuffRow>
+                    <PolicyStuffCol>
+                        <Link className="legalFooterLink" to="/policy">Privacy Policy</Link>
+                    </PolicyStuffCol>
+                    <PolicyStuffCol>
+                        <Link className="legalFooterLink" to="/terms">Terms and Conditions</Link>
+                    </PolicyStuffCol>
+                    <PolicyStuffCol>
+                        <Link className="legalFooterLink" to="/fda">FDA Disclaimer</Link>
+                    </PolicyStuffCol>
+                </PolicyStuffRow>
+
+
                 <hr />
-                <Row className="legalStuffRow">
-                    <Col className="legalStuffCol">
+                <LegalStuffRow>
+                    <LegalStuffCol>
                         <PLegal>New Age Oils LLC</PLegal>
-                    </Col>
-                    <Col className="legalStuffCol">
-                        <PLegal>|</PLegal>
-                    </Col>
-                    <Col className="legalStuffCol">
+                    </LegalStuffCol>
+                    <LegalStuffCol>
                         <PLegal>All Rights Reserved 2019 ©</PLegal>
-                    </Col>
-                </Row>
+                    </LegalStuffCol>
+                </LegalStuffRow>
             </MotherDiv>
         )
     }
@@ -61,22 +71,90 @@ class Footer extends Component {
 export default Footer;
 
 const MotherDiv = styled.div`
-    height: 25%;
+    height: 17%;
     width: 100%;
     background-color: #A9A9A9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 145px;
+    border-top: #179D1C solid 1px;
 `
 
-const InfoHeaders = styled.p`
-    font-weight: bold;
+const InfoRow = styled.div`
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 `
 
-const PCopy = styled.p`
+const PolicyStuffRow = styled.div`
+    width: 100%;
+    height: 12%;
     margin: 0;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const LegalStuffRow = styled.div`
+    width: 100%;
+    height: 12%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const StayConnectedCol = styled.div`
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+`
+
+const NavigateCol = styled.div`
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+`
+
+const LinkDiv = styled.div`
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+    align-self: flex-start;
+
+    @media only screen and (max-width: 660px) {
+        width: 250px;
+    }
+`
+
+const PolicyStuffCol = styled.div`
+    margin: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+`
+
+const LegalStuffCol = styled.div`
+    margin: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
 `
 
 const PLegal = styled.p`
@@ -85,13 +163,48 @@ const PLegal = styled.p`
 `
 
 const SocialDiv = styled.div`
-    margin: 0;
+    height: 100%;
+    width: 300px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+    align-self: flex-end;
+
+    @media only screen and (max-width: 660px) {
+        width: 250px;
+    }
+`
+
+const ImgLink = styled.a`
+    height: 100%
+    width: 25%;
+    display: flex;
     justify-content: center;
+    align-items: center;   
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+
+    @media only screen and (max-width: 660px) {
+        width: 15%;
+        margin: -3%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 525px) {
+        width: 15%;
+        margin: -3%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 `
 
 const Img = styled.img`
     height: 100%;
     width: auto;
+   @media only screen and (max-width: 550px) {
+        height: 85%;
+    }
 `

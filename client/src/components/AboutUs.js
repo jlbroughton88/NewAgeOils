@@ -8,10 +8,20 @@ class AboutUs extends Component {
             <MotherDiv>
                 <AboutUsDiv>
                     <HAbout>Our Story, Our Mission</HAbout>
-                    <SubHead1>New Age Oils, LLC is a Hemp Extraction Company located in Cherokee County, South Carolina. </SubHead1>
-                    <Para1>We process industrial Hemp by extracting essential oils. New Age Oils occupies an 80,000 square ft. facility under one roof that has been repurposed for the use as a Hemp processing facility.  We extract CBD oil by using the latest, safest, and cleanest technology. All of our Extraction Technicians have been certified in the CO2 extraction process. This program covered lab safety, CO2 solvent properties, system troubleshooting, best practices for operation, and standard operating procedures development.</Para1>
-                    <SubHead2>“New Age Oils is an Innovator in a limitless market with opportunity for all.”</SubHead2>
-                    <Para2>We are a growing Hemp processing company looking to the future to double our capacity in less than a year.  Your biomass will always be safely and securely stored in a climate controlled environment. The whole facility is covered with multiple cameras and a state of the art security system to insure the safety of your product.  We at New Age Oils, LLC know how much time and effort you have placed on growing a superior crop and we would love to be a part of your journey. Our whole team has 0oted the last few months of their lives to making sure that we have the safest, cleanest, and best facility in South Carolina.  </Para2>
+                    <hr />
+                    <SubHead1Div>
+                        <SubHead1>So, what is New Age Oils?</SubHead1>
+                    </SubHead1Div>
+                    <Para1Div>
+                        <Para1></Para1>
+                    </Para1Div>
+                    <SubHead2Div>
+                        <SubHead2></SubHead2>
+                    </SubHead2Div>
+                    <Para2Div>
+                        <Para2></Para2>
+                    </Para2Div>
+
                 </AboutUsDiv>
                 <Footer />
             </MotherDiv>
@@ -24,21 +34,39 @@ export default AboutUs;
 const MotherDiv = styled.div`
             height: 100%;
             width: 100%;
+            background: #808080;
+        background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+        background: -webkit-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+        background: linear-gradient(135deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
         `
 
 const AboutUsDiv = styled.div`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
             height: 100%;
-            background-color: #568557;
             padding: 5%;
+
 `
 
-const HAbout = styled.h1`
+const HAbout = styled.h3`
     margin: 0;
+    margin-bottom: 2.5%;
 `
 
-const SubHead1 = styled.h3``
+const SubHead1Div = styled.div``
 
-const SubHead2 = styled.h3``
+const SubHead2Div = styled.div``
+
+const Para1Div = styled.div``
+
+const Para2Div = styled.div``
+
+const SubHead1 = styled.h5``
+
+const SubHead2 = styled.h5``
 
 const Para1 = styled.p``
 
