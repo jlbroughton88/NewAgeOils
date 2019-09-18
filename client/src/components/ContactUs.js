@@ -5,7 +5,6 @@ class ContactUs extends Component {
     render() {
         return (
             <MotherDiv>
-                <MainDiv>
                     <ContactUsDiv>
                         <HContact>Contact Us</HContact>
                         <hr />
@@ -17,8 +16,9 @@ class ContactUs extends Component {
                             <Email>info@newageoilsllc.com</Email>
                         </Address>
                     </ContactUsDiv>
-                </MainDiv>
-                <Footer />
+                <FooterDiv>
+                    <Footer />
+                </FooterDiv>
             </MotherDiv>
         )
     }
@@ -27,7 +27,7 @@ class ContactUs extends Component {
 export default ContactUs;
 
 const MotherDiv = styled.div`
-    height: 100%;
+    height: auto;
     width: 100%;
     background: #808080;
     background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
@@ -40,18 +40,11 @@ const ContactUsDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     padding: 5%;
+    // flex: 1;
 `
 
-const MainDiv = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-`
 
 // const MapDiv = styled.div`
 // width: '100%';
@@ -84,3 +77,8 @@ const CityState = styled.p``
 const PhoneNum = styled.p``
 
 const Email = styled.p``
+
+const FooterDiv = styled.div`
+width: 100%;
+height: 143px;
+`

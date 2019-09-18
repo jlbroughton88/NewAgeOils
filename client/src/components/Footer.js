@@ -44,12 +44,15 @@ class Footer extends Component {
                 <PolicyStuffRow>
                     <PolicyStuffCol>
                         <Link className="legalFooterLink" to="/policy">Privacy Policy</Link>
+                        <Link className="legalFooterLinkShort" to="/policy">Privacy</Link>
                     </PolicyStuffCol>
                     <PolicyStuffCol>
                         <Link className="legalFooterLink" to="/terms">Terms and Conditions</Link>
+                        <Link className="legalFooterLinkShort" to="/terms">Terms</Link>
                     </PolicyStuffCol>
                     <PolicyStuffCol>
                         <Link className="legalFooterLink" to="/fda">FDA Disclaimer</Link>
+                        <Link className="legalFooterLinkShort" to="/fda">FDA Disc.</Link>
                     </PolicyStuffCol>
                 </PolicyStuffRow>
 
@@ -57,10 +60,12 @@ class Footer extends Component {
                 <hr />
                 <LegalStuffRow>
                     <LegalStuffCol>
-                        <PLegal>New Age Oils LLC</PLegal>
+                        <PLegal className="legal">New Age Oils LLC</PLegal>
+                        <PLegal className="legalShort">NAO LLC</PLegal>
                     </LegalStuffCol>
                     <LegalStuffCol>
-                        <PLegal>All Rights Reserved 2019 ©</PLegal>
+                        <PLegal className="legal">All Rights Reserved 2019 ©</PLegal>
+                        <PLegal className="legalShort">All Rights Reserved 2019 ©</PLegal>
                     </LegalStuffCol>
                 </LegalStuffRow>
             </MotherDiv>
@@ -80,6 +85,10 @@ const MotherDiv = styled.div`
     align-items: center;
     min-height: 145px;
     border-top: #179D1C solid 1px;
+
+    @media only screen and (max-width:497px) {
+        min-height: 190px
+    }
 `
 
 const InfoRow = styled.div`
@@ -89,6 +98,11 @@ const InfoRow = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @media only screen and (max-width:497px) {
+        height: 40%;
+        flex-direction: column;
+    }
 `
 
 const PolicyStuffRow = styled.div`
@@ -116,6 +130,10 @@ const StayConnectedCol = styled.div`
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+
+    @media only screen and (max-width:497px) {
+        width: 100%;
+    }
 `
 
 const NavigateCol = styled.div`
@@ -125,6 +143,10 @@ const NavigateCol = styled.div`
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+
+        @media only screen and (max-width:497px) {
+        width: 100%;
+    }
 `
 
 const LinkDiv = styled.div`
@@ -138,6 +160,10 @@ const LinkDiv = styled.div`
 
     @media only screen and (max-width: 660px) {
         width: 250px;
+    }
+
+        @media only screen and (max-width:497px) {
+        width:100%;
     }
 `
 
@@ -174,6 +200,10 @@ const SocialDiv = styled.div`
     @media only screen and (max-width: 660px) {
         width: 250px;
     }
+
+    @media only screen and (max-width:497px) {
+        width:100%;
+    }
 `
 
 const ImgLink = styled.a`
@@ -199,6 +229,12 @@ const ImgLink = styled.a`
         margin-top: 0;
         margin-bottom: 0;
     }
+
+    @media only screen and (max-width:497px) {
+          width: 25%;
+            justify-content: center;
+            margin: 0;
+      } 
 `
 
 const Img = styled.img`

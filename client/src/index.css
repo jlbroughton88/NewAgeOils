@@ -2,23 +2,22 @@ html{
   height: 100%;
   width: 100%;
   font-size: 1rem;
+  
 }
 
 body {
   margin: 0;
   height: 100%;
   width: 100%;
+  
 }
 
 #root{
   height: 100%;
   width: 100%;
+  
 }
 
-
-code {
-
-}
 
 .row {
   height: 100%;
@@ -118,7 +117,15 @@ hr{
   height: 70%; 
   color: black;
 
-  
+
+   
+}
+@media only screen and (max-width:497px) {
+  .footerLink {
+    width: 25%;
+      justify-content: center;
+      margin: 0;
+  }
 } 
 
 @media only screen and (max-width: 800px) {
@@ -133,18 +140,44 @@ hr{
   }
 }
 
-  @media only screen and (max-width: 550px) {
+  /* @media only screen and (max-width: 550px) {
     .footerLink{
       margin: 1.5%;
       margin-left: -2%;
       font-size: 0.9rem;
     }
-  }
+  } */
 
 
 .legalFooterLink{
   margin: 0;
   align-self: center;
   color: black;
+}
+
+.legalFooterLinkShort{
+  margin: 0;
+  align-self: center;
+  color: black;
+}
+
+@media (min-width: 498px) {
+  .legalFooterLink{ display: inline-block; }
+  .legalFooterLinkShort{ display: none; }
+}
+
+@media (max-width: 497px) {
+  .legalFooterLink{ display: none; }
+  .legalFooterLinkShort{ display: inline-block; }
+}
+
+@media (min-width: 498px) {
+  .legal{ display: inline-block; }
+  .legalShort{ display: none; }
+}
+
+@media (max-width: 497px) {
+  .legal{ display: none; }
+  .legalShort{ display: inline-block; }
 }
 

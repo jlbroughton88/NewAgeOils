@@ -23,7 +23,9 @@ class AboutUs extends Component {
                     </Para2Div>
 
                 </AboutUsDiv>
-                <Footer />
+                <FooterDiv>
+                    <Footer />
+                </FooterDiv>
             </MotherDiv>
         )
     }
@@ -32,22 +34,22 @@ class AboutUs extends Component {
 export default AboutUs;
 
 const MotherDiv = styled.div`
-            height: 100%;
-            width: 100%;
-            background: #808080;
+        min-height: 100vh;
+        background: #808080;
         background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
         background: -webkit-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
         background: linear-gradient(135deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
         `
 
 const AboutUsDiv = styled.div`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            height: 100%;
-            padding: 5%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 5%;
+        flex:1;
 
 `
 
@@ -71,3 +73,8 @@ const SubHead2 = styled.h5``
 const Para1 = styled.p``
 
 const Para2 = styled.p``
+
+const FooterDiv = styled.div`
+width: 100%;
+height: 143px;
+`

@@ -7,12 +7,16 @@ class Terms extends Component {
     render() {
         return (
             <MotherDiv>
-                <THeadDiv>
+                <MainDiv>
+                                    <THeadDiv>
                     <THead>Terms and Conditions</THead>
                 </THeadDiv>
+                <hr/>
                 <TBodyDiv>
-                    <TBody>Hello</TBody>
+                    <TBody></TBody>
                 </TBodyDiv>
+                </MainDiv>
+
                 <Footer />
             </MotherDiv>
         )
@@ -22,27 +26,41 @@ class Terms extends Component {
 export default Terms;
 
 const MotherDiv = styled.div`
-    height: 100%;
-    width: 100%;
-    background-color: lightgreen;
-    display: flex;
-    flex-direction: column;
+height: 100%;
+min-height: 100vh;
+background: #808080;
+background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+background: -webkit-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+background: linear-gradient(135deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+`
+
+const MainDiv = styled.div`
+height: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+padding: 5%;
+flex:1;
+
 `
 
 const THeadDiv = styled.div`
-width: 100%;
-height: 10%;
-padding: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `
 
 const TBodyDiv = styled.div`
-width: 100%;
-height: 80%;
-padding: 5%;
+
 `
 
-const THead = styled.h1`
-    margin: 0;
+const THead = styled.h3`
+margin: 0;
+margin-bottom: 2.5%;
 `
 
 const TBody = styled.p`
