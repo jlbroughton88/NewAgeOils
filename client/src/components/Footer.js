@@ -202,6 +202,7 @@ const SocialDiv = styled.div`
     }
 
     @media only screen and (max-width:497px) {
+        height: 45px;
         width:100%;
     }
 `
@@ -240,7 +241,4 @@ const ImgLink = styled.a`
 const Img = styled.img`
     height: 100%;
     width: auto;
-   @media only screen and (max-width: 550px) {
-        height: 85%;
-    }
 `

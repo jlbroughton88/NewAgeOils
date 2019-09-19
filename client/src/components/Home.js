@@ -43,7 +43,7 @@ class Home extends Component {
                             <ExtractionHeader>Why Choose <br/> New Age Oils?</ExtractionHeader>
                             <ExtractionPara>New Age Oils LLC produces custom medicinal-grade cannabis extracts for cultivators, marijuana-infused product manufactures and dispensaries that do not have the will, capacity or proper licensing to produce their own concentrates.
                                 <br/><br/>
-                                Utilizing Industry-Leading Techniques, our industrial scale extraction facility is one of the only legal operations to run both volatile and non volatile methods.
+                                Utilizing industry-leading techniques, our industrial scale extraction facility is one of the only legal operations to run both volatile and non volatile methods.
                             </ExtractionPara>
                         </ExtractionDiv>
                     </OurMission>
