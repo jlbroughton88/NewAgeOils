@@ -2,6 +2,8 @@ html{
   height: 100%;
   width: 100%;
   font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color:#0f2027;
   
 }
 
@@ -17,6 +19,7 @@ body {
   width: 100%;
   
 }
+
 
 
 .row {
@@ -74,14 +77,9 @@ body {
 
 /* HOME */
 
-.traitDiv{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 5%;
-}
+/* #banner{
+  font-family: Aquatico;
+} */
 
 
 /* Middle */

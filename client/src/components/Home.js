@@ -8,7 +8,7 @@ class Home extends Component {
         return (
             <MotherDiv>
                 <MainDiv>
-                    <Banner>
+                    <Banner id="banner">
                         <BHeader>New Age Oils</BHeader>
                         <BSub>Never Settle. Partner with the best.</BSub>
                         <BSub2>Crafting modern solutions for an ever growing industry.</BSub2>
@@ -67,12 +67,13 @@ const MotherDiv = styled.div`
 
 const MainDiv = styled.div`
     min-height: 100vh;
+    min-width: 305px;
     display: flex;
     flex-direction: column;
-    background: #808080;
-    background: -moz-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-    background: -webkit-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-    background: linear-gradient(135deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    background: #c2c2c2;
+    // background: -moz-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    // background: -webkit-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    // background: linear-gradient(135deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
 `
 // ------------
 // ------------
@@ -89,6 +90,10 @@ const Banner = styled.div`
     padding: 3%;
     margin: 0;
     margin-bottom: -1%;
+    color:#0f2027;
+
+   font-family: 'Open Sans', sans-serif;
+    
 
 
     @media only screen and (max-width: 657px) {
@@ -111,12 +116,12 @@ const BHeader = styled.h1`
     margin-bottom: 33px;
     font-size: 5rem;
 
-    @media only screen and (max-width: 657px) {
+    @media only screen and (max-width: 693px) {
         font-size: 4.5rem
         margin-bottom: 21px;
     }
 
-    @media only screen and (max-width: 554px) {
+    @media only screen and (max-width: 582px) {
         font-size: 4.2rem
         margin-bottom: 19px;
     }
@@ -125,6 +130,18 @@ const BHeader = styled.h1`
         font-size: 3.8rem
         margin-bottom: 19px;
     }
+
+    @media only screen and (max-width: 419px) {
+        font-size: 3.4rem
+    }
+
+    @media only screen and (max-width: 362px) {
+        font-size: 3.2rem
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 2.9rem
+    }
 `
 
 const BSub = styled.h4`
@@ -132,19 +149,30 @@ const BSub = styled.h4`
     margin-bottom: 33px;
     font-size: 2.5rem;
 
-    @media only screen and (max-width: 657px) {
-        font-size: 2.2rem
+    @media only screen and (max-width: 693px) {
+        font-size: 2.1rem
         margin-bottom: 21px;
     }
 
-    @media only screen and (max-width: 554px) {
+    @media only screen and (max-width: 582px) {
         font-size: 1.8rem
         margin-bottom: 19px;
     }
 
     @media only screen and (max-width: 460px) {
         font-size: 1.5rem
-        margin-bottom: 19px;
+    }
+
+    @media only screen and (max-width: 419px) {
+        font-size: 1.3rem
+    }
+
+    @media only screen and (max-width: 362px) {
+        font-size: 1.22rem
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 1.07rem
     }
 `
 
@@ -153,12 +181,12 @@ const BSub2 = styled.h5`
     font-size: 1.5rem;
     margin-bottom: 33px;
 
-    @media only screen and (max-width: 657px) {
+    @media only screen and (max-width: 663px) {
         font-size: 1.2rem
         margin-bottom: 21px;
     }
 
-    @media only screen and (max-width: 554px) {
+    @media only screen and (max-width: 582px) {
         font-size: 1rem
         margin-bottom: 19px;
     }
@@ -168,12 +196,25 @@ const BSub2 = styled.h5`
         margin-bottom: 19px;
     }
 
+    @media only screen and (max-width: 419px) {
+        font-size: 0.8rem
+    }
+
+    @media only screen and (max-width: 362px) {
+        font-size: 0.75rem
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.68rem
+    }
+
 `
 const CallToAction = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a9a9a9;
+    background-color: #0f2027;;
+    color: #c2c2c2;
     padding: 1.5%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -182,6 +223,7 @@ const CallToAction = styled.div`
     max-width: 133px;
     max-height: 57px;
     border: solid 1px #179D1C;  
+
 
     @media only screen and (max-width: 460px) {
         min-width: 120px;
@@ -209,7 +251,9 @@ const WhoDiv = styled.div`
     padding-left: 10%;
     padding-right: 10%;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-`
+    color:#0f2027;
+ 
+ `
 
 const WhoWeAreHeader = styled.h3`
     margin:0;
@@ -218,12 +262,28 @@ const WhoWeAreHeader = styled.h3`
     @media only screen and (max-width: 713px) {
         font-size: 2.5rem
     }
+
+    @media only screen and (max-width: 420px) {
+        font-size: 2.25rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 2.1rem;
+    }
 `
 
 const WhoPara = styled.p`
-@media only screen and (max-width: 713px) {
-    font-size: 0.95rem
-}
+    @media only screen and (max-width: 713px) {
+        font-size: 0.95rem
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.90rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.85rem;
+    }
 `
 
 const MissionDiv = styled.div`
@@ -232,6 +292,7 @@ const MissionDiv = styled.div`
     padding-left: 10%;
     padding-right: 10%;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    color:#0f2027;
 `
 
 const MissionHeader = styled.h3`
@@ -241,6 +302,14 @@ const MissionHeader = styled.h3`
     @media only screen and (max-width: 713px) {
         font-size: 2.5rem;
     }
+
+    @media only screen and (max-width: 420px) {
+        font-size: 2.25rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 2.1rem;
+    }
 `
 
 const MissionPara = styled.p`
@@ -249,12 +318,28 @@ const MissionPara = styled.p`
     @media only screen and (max-width: 713px) {
         font-size: 0.95rem
     }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.90rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.85rem;
+    }
 `
 
 const InitialDescription = styled.p`
-@media only screen and (max-width: 713px) {
-    font-size: 0.95rem
-}
+    @media only screen and (max-width: 713px) {
+        font-size: 0.95rem
+    }
+
+    @media only screen and (max-width: 420px) {
+        font-size: 0.9rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.85rem;
+    }
 `
 
 const WhyDiv = styled.div`
@@ -263,18 +348,38 @@ const WhyDiv = styled.div`
     padding-left: 10%;
     padding-right: 10%;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    color:#0f2027;
 `
 
 const WhyHeader = styled.h3`
-@media only screen and (max-width: 713px) {
-    font-size: 2.5rem
-}
+    margin: 0;
+    margin-bottom: 5%;
+    @media only screen and (max-width: 713px) {
+        font-size: 2.5rem
+    }
+
+    @media only screen and (max-width: 420px) {
+        font-size: 2.25rem;
+    }
+
+    @media only screen and (max-width: 364px) {
+        font-size: 2.1rem;
+    }
 `
 
 const WhyPara = styled.p`
-@media only screen and (max-width: 713px) {
-    font-size: 0.95rem
-}
+    margin: 0;
+    @media only screen and (max-width: 713px) {
+        font-size: 0.95rem
+    }
+
+        @media only screen and (max-width: 339px) {
+        font-size: 0.90rem;
+    }
+
+    @media only screen and (max-width: 339px) {
+        font-size: 0.85rem;
+    }
 `
 
 

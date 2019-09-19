@@ -29,10 +29,7 @@ export default ContactUs;
 const MotherDiv = styled.div`
     height: auto;
     width: 100%;
-    background: #808080;
-    background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
-    background: -webkit-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
-    background: linear-gradient(135deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+    background: #c2c2c2;
 `
 
 const ContactUsDiv = styled.div`

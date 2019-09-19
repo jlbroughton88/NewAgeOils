@@ -26,10 +26,7 @@ export default FDA;
 const MotherDiv = styled.div`
     height: 100%;
     min-height: 100vh;
-    background: #808080;
-    background: -moz-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
-    background: -webkit-linear-gradient(-45deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
-    background: linear-gradient(135deg, #808080 0%, #BDBDBD 42%, #FFFFFF 100%);
+    background: #c2c2c2;
 
 `
 
