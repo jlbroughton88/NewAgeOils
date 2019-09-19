@@ -26,7 +26,7 @@ export default FDA;
 const MotherDiv = styled.div`
     height: 100%;
     min-height: 100vh;
-    background: #c2c2c2;
+    background: #e4e4e4;
 
 `
 

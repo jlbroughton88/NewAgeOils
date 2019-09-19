@@ -78,7 +78,8 @@ export default Footer;
 const MotherDiv = styled.div`
     height: 17%;
     width: 100%;
-    background-color: #A9A9A9;
+    background-color: #0f2027;
+    color: #e4e4e4
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@ const MotherDiv = styled.div`
 
     @media only screen and (max-width:497px) {
         min-height: 210px
-    }
+    }    
 `
 
 const InfoRow = styled.div`
@@ -103,6 +104,8 @@ const InfoRow = styled.div`
         height: 45%;
         flex-direction: column;
     }
+
+
 `
 
 const PolicyStuffRow = styled.div`
@@ -134,6 +137,8 @@ const StayConnectedCol = styled.div`
     @media only screen and (max-width:497px) {
         width: 100%;
     }
+
+    
 `
 
 const NavigateCol = styled.div`
@@ -148,9 +153,6 @@ const NavigateCol = styled.div`
         width: 100%;
     }
 
-    @media only screen and (max-width:497px) {
-        justify-content: center;
-    }
 `
 
 const LinkDiv = styled.div`
@@ -209,6 +211,8 @@ const SocialDiv = styled.div`
         height: 50px;
         width:100%;
     }
+
+    
 `
 
 const ImgLink = styled.a`
@@ -239,10 +243,18 @@ const ImgLink = styled.a`
           width: 25%;
             justify-content: center;
             margin: 0;
-      } 
+      }     
+      
 `
 
 const Img = styled.img`
     height: 100%;
     width: auto;
+
+    @media only screen and (max-width: 500px) {
+        width: 45px;
+        height: 45px;
+    } 
+
+
 `

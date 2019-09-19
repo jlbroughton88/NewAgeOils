@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from "styled-components";
 import Footer from "./Footer.js"
 import { Link } from "react-router-dom";
+import JarsOfOil from "./images/jarsOfOil.jpg"
 
 class Home extends Component {
     render() {
@@ -41,6 +42,12 @@ class Home extends Component {
                                 We at New Age Oils, LLC know how much time and effort you have placed on growing a superior crop and we would love to be a part of your journey. Our whole team has 0oted the
                                 last few months of their lives to making sure that we have the safest, cleanest, and best facility in South Carolina.
                             </InitialDescription>
+                            <br/>
+                            <ImageDiv>
+                                <JarsDiv>
+                                    <Img src={JarsOfOil}></Img>
+                                </JarsDiv>
+                            </ImageDiv>
                         </MissionDiv>
                         <WhyDiv>
                             <WhyHeader>Why Choose <br className="whyBreak" /> New Age Oils?</WhyHeader>
@@ -70,10 +77,26 @@ const MainDiv = styled.div`
     min-width: 305px;
     display: flex;
     flex-direction: column;
-    background: #c2c2c2;
-    // background: -moz-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-    // background: -webkit-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-    // background: linear-gradient(135deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    // justify-content: center;
+    // align-items: center;
+    background: #e4e4e4;
+    padding-left: 12%;
+    padding-right: 12%;
+    
+    @media only screen and (max-width: 1093px) {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    @media only screen and (max-width: 795px) {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    @media only screen and (max-width: 517px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 `
 // ------------
 // ------------
@@ -96,7 +119,7 @@ const Banner = styled.div`
     
 
 
-    @media only screen and (max-width: 657px) {
+    @media only screen and (max-width: 663px) {
         height: 292px;
     }
 
@@ -116,7 +139,11 @@ const BHeader = styled.h1`
     margin-bottom: 33px;
     font-size: 5rem;
 
-    @media only screen and (max-width: 693px) {
+    @media only screen and (max-width: 795px) {
+        font-size: 4.75rem
+    }
+
+    @media only screen and (max-width: 663px) {
         font-size: 4.5rem
         margin-bottom: 21px;
     }
@@ -149,13 +176,26 @@ const BSub = styled.h4`
     margin-bottom: 33px;
     font-size: 2.5rem;
 
+    @media only screen and (max-width: 795px) {
+        font-size: 2.25rem
+    }
+
     @media only screen and (max-width: 693px) {
         font-size: 2.1rem
         margin-bottom: 21px;
     }
 
+    @media only screen and (max-width: 620px) {
+        font-size: 1.95rem
+    }
+
     @media only screen and (max-width: 582px) {
         font-size: 1.8rem
+        margin-bottom: 19px;
+    }
+
+    @media only screen and (max-width: 533px) {
+        font-size: 1.7rem
         margin-bottom: 19px;
     }
 
@@ -181,7 +221,11 @@ const BSub2 = styled.h5`
     font-size: 1.5rem;
     margin-bottom: 33px;
 
-    @media only screen and (max-width: 663px) {
+    @media only screen and (max-width: 795px) {
+        font-size: 1.35rem
+    }
+
+    @media only screen and (max-width: 693px) {
         font-size: 1.2rem
         margin-bottom: 21px;
     }
@@ -213,8 +257,8 @@ const CallToAction = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f2027;;
-    color: #c2c2c2;
+    background-color: #0f2027;
+    color: #e4e4e4;
     padding: 1.5%;
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -380,6 +424,22 @@ const WhyPara = styled.p`
     @media only screen and (max-width: 339px) {
         font-size: 0.85rem;
     }
+`
+
+const ImageDiv = styled.div`
+    width: 100%;
+`
+const JarsDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+`
+const Img = styled.img`
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 `
 
 
