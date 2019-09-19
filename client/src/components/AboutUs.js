@@ -62,7 +62,9 @@ const SubHead1Div = styled.div``
 
 const SubHead2Div = styled.div``
 
-const Para1Div = styled.div``
+const Para1Div = styled.div`
+box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+`
 
 const Para2Div = styled.div``
 

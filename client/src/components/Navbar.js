@@ -17,7 +17,7 @@ class Navbar extends Component {
                     </Col>
                     <Col s={9} m={9} l={9} className="navCol">
                         <Link className="navLink" to="/">Home</Link>
-                        <Link className="navLink" to="/about">About</Link>
+                        {/* <Link className="navLink" to="/about">About</Link> */}
                         <Link className="navLink" to="/services">Services</Link>
                         <Link className="navLink" id="contactBtn" to="/contact">Contact</Link>
                     </Col>

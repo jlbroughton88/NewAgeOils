@@ -63,8 +63,7 @@ body {
 }
 
 .navLink:hover {
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(23,157,28,0); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(23,157,28,0);
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -83,6 +82,16 @@ box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15p
   flex-direction: column;
   padding: 5%;
 }
+
+
+/* Middle */
+  .callToActionLink{
+    color: black;
+  }
+
+  .callToAction:hover {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+  }
 
 
 
@@ -116,15 +125,24 @@ hr{
   margin-bottom: 0;
   height: 70%; 
   color: black;
-
-
-   
 }
+
+@media (min-width: 498px) {
+  .linkAndImageLine{ display: none; }
+}
+
+@media (max-width: 497px) {
+  .linkAndImageLine{ 
+    display: inline-block;
+  }
+}
+
 @media only screen and (max-width:497px) {
   .footerLink {
-    width: 25%;
+    width: 33%;
       justify-content: center;
       margin: 0;
+      font-size: 1.1rem;
   }
 } 
 
@@ -140,13 +158,18 @@ hr{
   }
 }
 
-  /* @media only screen and (max-width: 550px) {
-    .footerLink{
-      margin: 1.5%;
-      margin-left: -2%;
-      font-size: 0.9rem;
-    }
-  } */
+@media only screen and (max-width:775px) {
+  .whyBreak {
+    display: inline-block;
+  }
+} 
+
+@media only screen and (min-width:776px) {
+  .whyBreak {
+    display: none;
+  } 
+} 
+
 
 
 .legalFooterLink{

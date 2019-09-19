@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from "styled-components";
 import Footer from "./Footer.js"
-import JarsOfOil from "./images/jarsOfOil.jpg"
+import { Link } from "react-router-dom";
 
 class Home extends Component {
     render() {
@@ -12,7 +12,10 @@ class Home extends Component {
                         <BHeader>New Age Oils</BHeader>
                         <BSub>Never Settle. Partner with the best.</BSub>
                         <BSub2>Crafting modern solutions for an ever growing industry.</BSub2>
-                        <CallToAction>Learn More</CallToAction>
+                        <Link className="callToActionLink" to="/services">
+                            <CallToAction className="callToAction">Learn More</CallToAction>
+                        </Link>
+                        
                     </Banner>
                     <hr />
                     <OurMission>
@@ -39,13 +42,13 @@ class Home extends Component {
                                 last few months of their lives to making sure that we have the safest, cleanest, and best facility in South Carolina.
                             </InitialDescription>
                         </MissionDiv>
-                        <ExtractionDiv>
-                            <ExtractionHeader>Why Choose <br/> New Age Oils?</ExtractionHeader>
-                            <ExtractionPara>New Age Oils LLC produces custom medicinal-grade cannabis extracts for cultivators, marijuana-infused product manufactures and dispensaries that do not have the will, capacity or proper licensing to produce their own concentrates.
+                        <WhyDiv>
+                            <WhyHeader>Why Choose <br className="whyBreak" /> New Age Oils?</WhyHeader>
+                            <WhyPara>New Age Oils LLC produces custom medicinal-grade cannabis extracts for cultivators, marijuana-infused product manufactures and dispensaries that do not have the will, capacity or proper licensing to produce their own concentrates.
                                 <br/><br/>
                                 Utilizing industry-leading techniques, our industrial scale extraction facility is one of the only legal operations to run both volatile and non volatile methods.
-                            </ExtractionPara>
-                        </ExtractionDiv>
+                            </WhyPara>
+                        </WhyDiv>
                     </OurMission>
                 </MainDiv>
                 <Footer />
@@ -57,19 +60,19 @@ class Home extends Component {
 export default Home;
 
 const MotherDiv = styled.div`
-height: 100vh;
-min-height: 100vh;
+    height: 100vh;
+    min-height: 100vh;
 
 `
 
 const MainDiv = styled.div`
-min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: #808080;
-background: -moz-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-background: -webkit-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
-background: linear-gradient(135deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    background: -moz-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    background: -webkit-linear-gradient(-45deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
+    background: linear-gradient(135deg, #808080 0%, #C4C4C4 50%, #E4E4E4 100%);
 `
 // ------------
 // ------------
@@ -201,50 +204,78 @@ const OurMission = styled.div`
 `
 
 const WhoDiv = styled.div`
-    border: black solid 1px;
     margin-bottom: 5%;
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 `
 
 const WhoWeAreHeader = styled.h3`
     margin:0;
     margin-bottom: 5%;
+
+    @media only screen and (max-width: 713px) {
+        font-size: 2.5rem
+    }
 `
 
-const WhoPara = styled.p``
+const WhoPara = styled.p`
+@media only screen and (max-width: 713px) {
+    font-size: 0.95rem
+}
+`
 
 const MissionDiv = styled.div`
-    border: black solid 1px;
     margin-bottom: 5%;
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 `
 
 const MissionHeader = styled.h3`
     margin: 0;
     margin-bottom: 5%;
+
+    @media only screen and (max-width: 713px) {
+        font-size: 2.5rem;
+    }
 `
 
-const MissionPara = styled.h6`
+const MissionPara = styled.p`
     margin: 0;
+
+    @media only screen and (max-width: 713px) {
+        font-size: 0.95rem
+    }
 `
 
-const InitialDescription = styled.p``
-
-const ExtractionDiv = styled.div`
-border: black solid 1px;
-margin-bottom: 5%;
-padding: 5%;
-padding-left: 10%;
-padding-right: 10%;
+const InitialDescription = styled.p`
+@media only screen and (max-width: 713px) {
+    font-size: 0.95rem
+}
 `
 
-const ExtractionHeader = styled.h3``
+const WhyDiv = styled.div`
+    margin-bottom: 5%;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+`
 
-const ExtractionPara = styled.p``
+const WhyHeader = styled.h3`
+@media only screen and (max-width: 713px) {
+    font-size: 2.5rem
+}
+`
+
+const WhyPara = styled.p`
+@media only screen and (max-width: 713px) {
+    font-size: 0.95rem
+}
+`
 
 
 // TRAITS

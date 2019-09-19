@@ -27,12 +27,12 @@ class Footer extends Component {
 
                         </SocialDiv>
                     </StayConnectedCol>
-
+                    <hr className="linkAndImageLine"/>
                     <NavigateCol>
                         {/* <InfoHeaders>Navigate</InfoHeaders> */}
                         <LinkDiv>
                             <Link className="footerLink" to="/">Home</Link>
-                            <Link className="footerLink" to="/about">About</Link>
+                            {/* <Link className="footerLink" to="/about">About</Link> */}
                             <Link className="footerLink" to="/services">Services</Link>
                             <Link className="footerLink" id="footerContactBtn" to="/contact">Contact</Link>
                         </LinkDiv>
@@ -87,7 +87,7 @@ const MotherDiv = styled.div`
     border-top: #179D1C solid 1px;
 
     @media only screen and (max-width:497px) {
-        min-height: 190px
+        min-height: 210px
     }
 `
 
@@ -100,7 +100,7 @@ const InfoRow = styled.div`
     flex-direction: row;
 
     @media only screen and (max-width:497px) {
-        height: 40%;
+        height: 45%;
         flex-direction: column;
     }
 `
@@ -146,6 +146,10 @@ const NavigateCol = styled.div`
 
         @media only screen and (max-width:497px) {
         width: 100%;
+    }
+
+    @media only screen and (max-width:497px) {
+        justify-content: center;
     }
 `
 
@@ -202,7 +206,7 @@ const SocialDiv = styled.div`
     }
 
     @media only screen and (max-width:497px) {
-        height: 45px;
+        height: 50px;
         width:100%;
     }
 `
