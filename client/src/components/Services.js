@@ -79,6 +79,8 @@ const HServicesDiv = styled.div`
 const HServices = styled.h2`
     margin: 0;
     margin-bottom: 5%;
+
+   
 `
 
 const OneServiceDiv = styled.div`
@@ -110,9 +112,14 @@ const OneServiceDiv = styled.div`
     }
 `
 
-const OneServiceHead = styled.h3`
-    margin: 0;
-    margin-bottom: 2.5%;
+const OneServiceHead = styled.h4`
+    font-size: 2.4rem;
+    // margin: 0;
+    // margin-bottom: 2.5%; 
+    margin-top: -0.5%;
+    @media (max-width: 550px) {
+        font-size: 2.1rem;
+    }
 `
 
 const OneServicePara = styled.p`

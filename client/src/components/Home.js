@@ -39,7 +39,7 @@ class Home extends Component {
                                   stored in a climate controlled environment. The whole facility is covered with multiple cameras and a state of the art security system to insure the safety of your product.
                                 <br />
                                 <br />
-                                We at New Age Oils, LLC know how much time and effort you have placed on growing a superior crop and we would love to be a part of your journey. Our whole team has 0oted the
+                                We at New Age Oils, LLC know how much time and effort you have placed on growing a superior crop and we would love to be a part of your journey. Our whole team has devoted the
                                 last few months of their lives to making sure that we have the safest, cleanest, and best facility in South Carolina.
                             </InitialDescription>
                             <br/>

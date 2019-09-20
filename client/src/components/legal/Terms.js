@@ -58,6 +58,10 @@ const TBodyDiv = styled.div`
 const THead = styled.h3`
 margin: 0;
 margin-bottom: 2.5%;
+
+@media (max-width: 550px) {
+    font-size: 2rem;
+}
 `
 
 const TBody = styled.p`

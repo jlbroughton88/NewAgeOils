@@ -17,13 +17,13 @@ class Footer extends Component {
                         {/* <InfoHeaders>Stay Connected</InfoHeaders> */}
                         <SocialDiv>
                             
-                                <ImgLink href=""><Img src={email} alt="" /></ImgLink>
+                                <ImgLink href="mailto:nfo@newageoilsllc.com"><Img src={email} alt="Email Us!" /></ImgLink>
 
-                            <ImgLink href=""><Img src={faceBook} alt="" /></ImgLink>
+                            <ImgLink href="https://www.facebook.com"><Img src={faceBook} alt="" /></ImgLink>
 
-                            <ImgLink href=""><Img src={linkedIn} alt="" /></ImgLink>
+                            <ImgLink href="https://www.linkedin.com"><Img src={linkedIn} alt="" /></ImgLink>
 
-                            <ImgLink href=""><Img src={instagram} alt="" /></ImgLink>
+                            <ImgLink href="https://www.instagram.com"><Img src={instagram} alt="" /></ImgLink>
 
                         </SocialDiv>
                     </StayConnectedCol>
@@ -32,7 +32,6 @@ class Footer extends Component {
                         {/* <InfoHeaders>Navigate</InfoHeaders> */}
                         <LinkDiv>
                             <Link className="footerLink" to="/">Home</Link>
-                            {/* <Link className="footerLink" to="/about">About</Link> */}
                             <Link className="footerLink" to="/services">Services</Link>
                             <Link className="footerLink" id="footerContactBtn" to="/contact">Contact</Link>
                         </LinkDiv>
