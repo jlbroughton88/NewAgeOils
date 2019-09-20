@@ -112,6 +112,7 @@ const OneServiceDiv = styled.div`
 
 const OneServiceHead = styled.h4`
     margin: 0;
+    margin-bottom: 2.5%;
 `
 
 const OneServicePara = styled.p`

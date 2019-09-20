@@ -53,8 +53,7 @@ const ContactUsDiv = styled.div`
 
     @media (max-width: 500px) {
         justify-content: center;
-        // padding-top: 15%
-        min-height: 67vh;
+        min-height: 75vh;
     }
 
     @media (max-width: 400px) {
