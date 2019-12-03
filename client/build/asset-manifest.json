@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.860f5723.chunk.css",
-    "main.js": "/static/js/main.7fa2163d.chunk.js",
-    "main.js.map": "/static/js/main.7fa2163d.chunk.js.map",
+    "main.css": "/static/css/main.c68895cb.chunk.css",
+    "main.js": "/static/js/main.e47fae34.chunk.js",
+    "main.js.map": "/static/js/main.e47fae34.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a7ca617d.js",
     "runtime~main.js.map": "/static/js/runtime~main.a7ca617d.js.map",
     "static/js/2.d048a5d0.chunk.js": "/static/js/2.d048a5d0.chunk.js",
     "static/js/2.d048a5d0.chunk.js.map": "/static/js/2.d048a5d0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.df52f8944d371d5380017cea4db30805.js": "/precache-manifest.df52f8944d371d5380017cea4db30805.js",
+    "precache-manifest.26731397068190e9a73894bc7c350ceb.js": "/precache-manifest.26731397068190e9a73894bc7c350ceb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.860f5723.chunk.css.map": "/static/css/main.860f5723.chunk.css.map",
+    "static/css/main.c68895cb.chunk.css.map": "/static/css/main.c68895cb.chunk.css.map",
     "static/media/extractor.png": "/static/media/extractor.47966b16.png",
     "static/media/jarsOfOil.jpg": "/static/media/jarsOfOil.b6fd1545.jpg",
     "static/media/oilBowl.png": "/static/media/oilBowl.b1f7aa1f.png"

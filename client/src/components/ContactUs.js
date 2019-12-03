@@ -5,28 +5,28 @@ class ContactUs extends Component {
     render() {
         return (
             <MotherDiv>
-                    <ContactUsDiv>
-                        <HContact>Contact Us</HContact>
-                        <hr />
-                        <Address>
-                            <CompanyDiv>
-                               <Company>New Age Oils, llc</Company> 
-                            </CompanyDiv>
-                                <AddressDiv>
-                                    <VisitUs>Visit Us!</VisitUs>
-                                    <Street> 914 CHAMPION FERRY ROAD</Street>
+                <ContactUsDiv>
+                    <HContact>Contact Us</HContact>
+                    <hr />
+                    <Address>
+                        <CompanyDiv>
+                            <Company>New Age Oils, llc</Company>
+                        </CompanyDiv>
+                        <AddressDiv>
+                            <VisitUs>Visit Us!</VisitUs>
+                            <Street> 914 CHAMPION FERRY ROAD</Street>
                             <CityState>GAFFNEY, SC 29341</CityState>
-                                </AddressDiv>
-                            <PhoneEmailDiv>
-                                <GetInTouch>Get In Touch!</GetInTouch>
+                        </AddressDiv>
+                        <PhoneEmailDiv>
+                            <GetInTouch>Get In Touch!</GetInTouch>
                             <PhoneNum>(864) 909-1964</PhoneNum>
-                            <EmailLink href="mailto:name@email.com">
+                            <EmailLink href="mailto:nfo@newageoilsllc.com">
                                 <Email>info@newageoilsllc.com</Email>
                             </EmailLink>
-                            </PhoneEmailDiv>
+                        </PhoneEmailDiv>
 
-                        </Address>
-                    </ContactUsDiv>
+                    </Address>
+                </ContactUsDiv>
                 <FooterDiv>
                     <Footer />
                 </FooterDiv>
@@ -49,7 +49,7 @@ const ContactUsDiv = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 5%;    
+    padding: 5%;
 
     @media (max-width: 500px) {
         justify-content: center;
@@ -77,7 +77,8 @@ const Address = styled.p`
     margin-top: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
 `
 
 const CompanyDiv = styled.div`

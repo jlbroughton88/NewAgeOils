@@ -91,7 +91,8 @@ const OneServiceDiv = styled.div`
     padding: 12%;
     padding-top: 5%;
     padding-bottom: 5%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
 
     @media only screen and (max-width: 993px) {
         font-size: 0.95rem;
@@ -174,7 +175,8 @@ const TwoServiceDiv = styled.div`
     padding-bottom: 5%;
     padding-top: 5%;
     margin-bottom: 8%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
 
     @media only screen and (max-width: 993px) {
         font-size: 0.95rem;

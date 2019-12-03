@@ -63,10 +63,12 @@ body {
   height: 70%; 
   padding: 2%;
   color: #e4e4e4;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .navLink:hover {
-  box-shadow: 0px 3px 15px rgba(228,228,228, 0.2)
+  box-shadow: 0px 3px 15px rgba(228,228,228, 0.2);
 }
 
 

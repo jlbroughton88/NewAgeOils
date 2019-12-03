@@ -267,6 +267,8 @@ const CallToAction = styled.div`
     max-width: 133px;
     max-height: 57px;
     border: solid 1px #179D1C;  
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
 
 
     @media only screen and (max-width: 460px) {
@@ -274,6 +276,11 @@ const CallToAction = styled.div`
         min-height: 45px;
         max-width: 120px;
         max-height: 45px;
+    }
+
+    :hover{
+        color: #179D1C;
+        box-shadow: 0 5px 10px rgba(58, 58, 58, 0.4);
     }
 `
 
@@ -290,11 +297,12 @@ const OurMission = styled.div`
 `
 
 const WhoDiv = styled.div`
+    border-radius: 5px;
     margin-bottom: 5%;
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     color:#0f2027;
  
  `
@@ -331,11 +339,12 @@ const WhoPara = styled.p`
 `
 
 const MissionDiv = styled.div`
+    border-radius: 5px;
     margin-bottom: 5%;
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     color:#0f2027;
 `
 
@@ -387,11 +396,12 @@ const InitialDescription = styled.p`
 `
 
 const WhyDiv = styled.div`
+    border-radius: 5px;
     margin-bottom: 5%;
     padding: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     color:#0f2027;
 `
 
@@ -439,7 +449,8 @@ const Img = styled.img`
     width: 100%;
     height: auto;
     max-width: 450px;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
 `
 
 
